@@ -1,0 +1,23 @@
+{
+    // ── Python interpreter ───────────────────────────────────────────
+    // Always use the project virtualenv, not the system Python.
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+    // ── Pyrefly (type checker) ───────────────────────────────────────
+    // Tell Pyrefly which Python interpreter / site-packages to resolve against.
+    "pyrefly.pythonInterpreter": "${workspaceFolder}/.venv/bin/python",
+
+    // ── Pylance / Pyright (if used alongside Pyrefly) ───────────────
+    "python.analysis.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/.venv/lib/python3.14/site-packages"
+    ],
+
+    // ── Linting ─────────────────────────────────────────────────────
+    // Disable the old Pylint extension linter (we use Pyrefly instead).
+    "python.linting.enabled": false,
+
+    // ── Terminal ─────────────────────────────────────────────────────
+    // Automatically activate the venv in every new terminal.
+    "python.terminal.activateEnvironment": true
+}

@@ -1,0 +1,97 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ===========================
+# Virtual Environments
+# ===========================
+.venv/
+venv/
+env/
+ENV/
+
+# ===========================
+# Credentials & Secrets
+# ===========================
+.env
+secrets.yaml
+credentials.json
+
+# ===========================
+# Model Weights (large files)
+# ===========================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# ===========================
+# Video / Image Assets
+# ===========================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+# Uncomment to also ignore test images:
+# *.jpg
+# *.jpeg
+# *.png
+
+# ===========================
+# Generated Outputs
+# ===========================
+outputs/
+runs/
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# macOS
+# ===========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ===========================
+# IDEs
+# ===========================
+# .vscode/settings.json is intentionally tracked (interpreter + Pyrefly config)
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ===========================
+# Jupyter
+# ===========================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===========================
+# Coverage / Testing
+# ===========================
+.coverage
+htmlcov/
+.pytest_cache/
