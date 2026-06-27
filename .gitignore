@@ -40,15 +40,18 @@ credentials.json
 # ===========================
 # Video / Image Assets
 # ===========================
+# Video files — ignore generated output videos; track sample clips v1-v6
 *.mp4
 *.avi
 *.mov
 *.mkv
 *.webm
-# Uncomment to also ignore test images:
-# *.jpg
-# *.jpeg
-# *.png
+!v1.mp4
+!v2.mp4
+!v3.mp4
+!v4.mp4
+!v5.mp4
+!v6.mp4
 
 # ===========================
 # Generated Outputs
